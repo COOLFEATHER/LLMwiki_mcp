@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-wiki"
+version = "0.3.0"
+description = "轻量 LLM Wiki MCP Server —— 个人知识库编译引擎，无 PyTorch/Chroma/LangGraph 依赖"
+requires-python = ">=3.10"
+dependencies = [
+  "fastmcp>=2.0.0",
+  "openai>=1.50.0",
+  "pyyaml>=6.0",
+  "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+llm-wiki-server = "server:main"
+
+[tool.setuptools]
+py-modules = ["server"]
+
+[tool.setuptools.packages.find]
+include = ["app*"]

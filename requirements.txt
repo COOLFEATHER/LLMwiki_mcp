@@ -1,0 +1,10 @@
+# MCP Server
+fastmcp>=2.0.0
+# LLM API 调用（chat + embedding）
+openai>=1.50.0
+# YAML frontmatter 解析/序列化
+pyyaml>=6.0
+# 环境变量
+python-dotenv>=1.0.0
+# 中文分词（可选——装了则 BM25 用 jieba 分词，不装则用内置 fallback）
+# jieba>=0.42.1

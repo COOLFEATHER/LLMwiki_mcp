@@ -1,0 +1,35 @@
+# ── 运行时数据 ──
+# 保留 data/wiki/（初始 Wiki 页是项目的一部分，应进版本管理）
+# 忽略自动生成的索引和图谱
+data/index.json
+data/links.json
+# 原始素材（按需决定是否版本管理）
+data/raw/*.md
+!data/raw/.gitkeep
+# 旧版 Chroma/BM25 数据（已废弃）
+data/chroma/
+data/bm25.pkl
+
+# ── 环境变量（含 API key，禁止提交） ──
+.env
+
+# ── Python ──
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+dist/
+build/
+
+# ── 系统 ──
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# ── 文档（可选） ──
+# PROJECT_REPORT.md
